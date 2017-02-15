@@ -1,0 +1,15 @@
+<a routerLink="/dashboard">Dashboard</a>
+<div>
+    <ul class="heroes">
+        <li *ngFor="let hero of heroes"
+        [class.selected]="hero === selectedHero"
+        (click)="onSelect(hero)">
+            <span class="badge">{{ hero.id }}</span>{{ hero.name }}
+        </li>
+    </ul>
+</div>
+<hero-detail [hero]="selectedHero"></hero-detail>
+<footer>
+    <a class="about" routerLink='/about'>About</a>
+    <a class="about" routerLink='/form'>Form</a>
+</footer>
