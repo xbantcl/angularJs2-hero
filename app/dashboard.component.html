@@ -1,8 +1,35 @@
-<h3>Top Heroes</h3>
-<div class="grid grid-pad">
-    <div *ngFor="let hero of heroes" class="col-1-4">
-        <div class="module hero">
-            <h4>{{ hero.name }}</h4>
+<div class="container">
+    <div class="col-1g-6 col-1-6 col-md-6">
+        <h3>Top Heroes</h3>
+        <div class="grid grid-pad">
+            <div *ngFor="let hero of heroes" [routerLink]="['/detail', hero.id]" class="col-1-4">
+                <div class="module hero">
+                    <h4>{{ hero.name }}</h4>
+                </div>
+            </div>
+            <div *ngIf="selectedHero">
+                <h2>
+                    {{selectedHero.name | uppercase}} is my hero
+                </h2>
+                <button (click)="gotoDetail()">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-1-6 col-md-6">
+        <h3>Top Heroes</h3>
+        <div class="grid grid-pad">
+            <div *ngFor="let hero of heroes" [routerLink]="['/detail', hero.id]" class="col-1-4">
+                <div class="module hero">
+                    <h4>{{ hero.name }}</h4>
+                </div>
+            </div>
+            <div *ngIf="selectedHero">
+                <h2>
+                    {{selectedHero.name | uppercase}} is my hero
+                </h2>
+                <button (click)="gotoDetail()">View Details</button>
+            </div>
         </div>
     </div>
 </div>
+

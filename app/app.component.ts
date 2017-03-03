@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'Tour of Heroes';
+    topHeroes = [
+        {id: 1, name: 'test1'},
+        {id:2, name: 'test2'}
+    ];
+    selectedHero = {id: 1, name: 'jack'};
 }

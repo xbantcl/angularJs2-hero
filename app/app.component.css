@@ -3,13 +3,29 @@ body {
 	padding: 0;
 }
 h1 {
-	width: 100%;
-	font-size: 40px;
-	font-weight: 100;
+	font-size: 1.2em;
 	text-align: center;
 	color: rgba(175, 47, 47, 0.15);
 	-webkit-text-rendering: optimizeLegibility;
 	-moz-text-rendering: optimizeLegibility;
 	text-rendering: optimizeLegibility;
 }
+nav a {
+	padding: 4px 5px;
+	text-decoration: none;
+    margin-top: 10px;
+	background-color: #eee;
+	border-radius: 4px;
+}
 
+nav a:visited, a:link {
+	color: #607D8B;
+}
+
+nav a:hover {
+	color: #039be5;
+	background-color: #CFD8DC;
+}
+nav a.active {
+	color: #039be5;
+}
