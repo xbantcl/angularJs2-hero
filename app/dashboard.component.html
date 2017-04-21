@@ -1,16 +1,76 @@
-<div class="container1">
-    <div class="col-1g-6 col-1-6 col-md-6">
-        <h3>Top Heroes</h3>
-        <div class="grid grid-pad">
-            <div *ngFor="let hero of heroes" [routerLink]="['/detail', hero.id]" class="col-1-4">
-                <div class="module hero">
-                    <h4>{{ hero.name }}</h4>
-                </div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                </span>
+                <input type="text" class="form-control" placeholder="Search for...">
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-1 col-sm-2 col-xs-2"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-1g-4 col-sm-4 col-md-4 col-xs-4 border-right">
+            <div class="div-center">
+                <span>上证指数</span><br>
+                <span>3222.17</span><br>
+                <span>-23.90 -0.74%</span>
+            </div>
+        </div>
+        <div class="col-1g-4 col-sm-4 col-md-4 col-xs-4 border-right">
+            <div class="div-center">
+                <span>恒生指数</span><br>
+                <span>3222.17</span><br>
+                <span>-23.90 -0.74%</span>
+            </div>
+        </div>
+        <div class="col-1g-4 col-sm-4 col-md-4 col-xs-4">
+            <div class="div-center">
+                <span>道琼斯指数</span><br>
+                <span>3222.17</span><br>
+                <span>-23.90 -0.74%</span>
             </div>
         </div>
     </div>
-    <div class="col-1g-6 col-1-6 col-md-6">
-        <my-heroes></my-heroes>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 underline-border"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="table">
+                <tr>
+                    <th>全部股票</th>
+                    <th>最新价</th>
+                    <th>涨跌幅</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>财信发展</td>
+                        <td>7.00</td>
+                        <td>-0.89%</td>
+                    </tr>
+                    <tr>
+                        <td>财信发展</td>
+                        <td>7.00</td>
+                        <td>-0.89%</td>
+                    </tr>
+                    <tr>
+                        <td>财信发展</td>
+                        <td>7.00</td>
+                        <td>-0.89%</td>
+                    </tr>
+                    <tr>
+                        <td>财信发展</td>
+                        <td>7.00</td>
+                        <td>-0.89%</td>
+                    </tr>
+                </tbody>
+            </div>
+        </div>
     </div>
 </div>
 

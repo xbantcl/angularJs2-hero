@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['app/app.component.css'],
 })
 export class AppComponent {
-    title = 'Tour of Heroes';
+    title = '我的自选股';
     topHeroes = [
         {id: 1, name: 'test1'},
         {id:2, name: 'test2'}
