@@ -61,19 +61,11 @@ h4 {
     }
 }
 @media (max-width: 1024px) {
-    .grid {
-        margin: 0;
-    }
-    .module {
-        min-width: 60px;
-    }
     .table tr > th {
         font-size: 15px;
-        padding: 0 50px;
     }
 
     .table tr > td {
-        padding: 0 50px;
     }
 }
 .div-center {
@@ -110,9 +102,5 @@ th > span {
 
 .table tr > td:last-child {
    color: #ff030a;
-}
-
-.table tr > td:first-child {
-    width: ;
 }
 
