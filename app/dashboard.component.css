@@ -1,3 +1,9 @@
+header {
+    text-align: center;
+}
+#content {
+   margin-top: 50px;
+}
 [class*='col-'] {
     float: left;
     padding-right: 20px;
@@ -13,38 +19,6 @@ a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-h3 {
-    text-align: center; margin-bottom: 0;
-}
-h4 {
-    position: relative;
-}
-.grid {
-    margin: 0;
-}
-.col-1-4 {
-    width: 25%;
-}
-.module {
-    padding: 20px;
-    text-align: center;
-    color: #eee;
-    max-height: 120px;
-    min-width: 120px;
-    background-color: #607D8B;
-    border-radius: 2px;
-}
-.module:hover {
-    background-color: #EEE;
-    cursor: pointer;
-    color: #607d8b;
-}
-.grid-pad {
-    padding: 10px 0;
-}
-.grid-pad > [class*='col-']:last-of-type {
-    padding-right: 20px;
 }
 @media (max-width: 600px) {
     .module {
@@ -104,3 +78,13 @@ th > span {
    color: #ff030a;
 }
 
+/**
+ * 页脚样式
+ */
+
+footer div[class*="col-"] {
+    height: 50px;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0px 0px 1px #888888;
+}
